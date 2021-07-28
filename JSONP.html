@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSONP</title>
+  <!--    修改此处引用的js   -->
+  <script src="js/JSONP.js"></script>
+  <script src="http://127.0.0.1:8000/JSONP-server"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <!--    <style class="css/index.css"></style>   -->
+</head>
+<body>
+<button>click me to send request</button>
+<div id="result"></div>
+<script>
+  function handle(data){
+    const result = document.getElementById("result");
+    result.innerHTML = data.name;
+  }
+</script>
+</body>
+</html>
